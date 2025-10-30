@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de Parceria - Caio Araújo Nutricionista de Atletas</title>
+    <!-- Carregando o TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Carregando a fonte Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <style>
+        /* Definindo a fonte Inter como padrão */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0f172a; /* slate-900 */
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Texto em gradiente (Brand) */
+        .brand-gradient-text {
+            background: linear-gradient(90deg, #2dd4bf, #06b6d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        /* Botão Primário (Brand) */
+        .btn-primary {
+            display: inline-block;
+            padding: 0.75rem 1.75rem; /* py-3 px-7 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-weight: 600; /* font-semibold */
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            background: linear-gradient(90deg, #14b8a6, #0891b2); /* Gradiente teal/cyan */
+            color: white;
+            font-size: 1.125rem; /* text-lg */
+        }
+        .btn-primary:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(45, 212, 191, 0.5);
+        }
+        /* Estilo dos Cards */
+        .card {
+            background-color: #1e293b; /* slate-800 */
+            border-radius: 0.75rem; /* rounded-xl */
+            padding: 2rem; /* p-8 */
+            border: 1px solid #334155; /* slate-700 */
+            transition: transform 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-slate-900 text-slate-300">
+
+    <!-- Cabeçalho -->
+    <header class="py-6 px-4 md:px-10 bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50 border-b border-slate-800">
+        <div class="container mx-auto flex justify-between items-center">
+
+            </div>
+            
+            <a href="#contato" class="btn-primary !text-sm !py-2 !px-5">
+                Falar sobre Parceria
+            </a>
+        </div>
+    </header>
+
+    <!-- Seção Herói com Vídeo -->
+    <section class="relative h-[70vh] md:h-[80vh] w-full overflow-hidden flex items-center justify-center text-center text-white">
+        <!-- Overlay Escuro -->
+        <div class="absolute inset-0 bg-black/70 z-10"></div>
+        
+        <!-- Vídeo de Fundo -->
+        <video autoplay loop muted playsinline class="absolute z-0 w-auto min-w-full min-h-full max-w-none object-cover">
+            <source src="video.mp4" type="video/mp4">
+            Seu navegador não suporta o vídeo. Considere usar a imagem de fallback.
+            <!-- Imagem de Fallback (opcional, se o vídeo falhar) -->
+            <!-- <img src="httpsa://placehold.co/1200x800/333/555?text=Background+Luta" class="object-cover w-full h-full" alt="Lutador treinando"> -->
+        </video>
+
+        <!-- Conteúdo de Texto -->
+        <div class="relative z-20 container mx-auto px-6">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-4 leading-tight">
+                BATER O PESO. <br> <span class="brand-gradient-text">MANTER A PERFORMANCE.</span>
+            </h1>
+            <p class="text-lg md:text-2xl text-slate-300 max-w-3xl mx-auto mb-8">
+                Leve para sua academia a estratégia nutricional de campeões, assinada por Caio Araújo, especialista em atletas de combate.
+            </p>
+            <a href="#proposta" class="btn-primary">
+                Conheça a Proposta
+            </a>
+        </div>
+    </section>
+
+    <!-- Seção Sobre o Problema -->
+    <section class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-6 text-slate-50">
+                O Erro que Custa o Pódio
+            </h2>
+            <p class="text-lg text-slate-400 mb-4">
+                O maior erro de um atleta de combate é focar apenas em <span class="text-slate-100 font-semibold">bater o peso</span> e esquecer da <span class="text-slate-100 font-semibold">recuperação pós-pesagem</span>. Um corte de peso mal feito resulta em perda de força, resistência e foco no dia da luta.
+            </p>
+            <p class="text-lg text-slate-300 font-semibold">
+                Nós garantimos que seus atletas subam no tatame ou ringue não apenas no peso certo, mas 100% recuperados, fortes e prontos para a vitória.
+            </p>
+        </div>
+    </section>
+
+    <!-- Seção O que está incluso (A Proposta) -->
+    <section id="proposta" class="py-20 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <span class="brand-gradient-text font-semibold uppercase">O Acompanhamento</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-50 mt-2">
+                    Programa Pré-Torneio para Academias
+                </h2>
+                <p class="text-slate-400 mt-4 max-w-2xl mx-auto">
+                    Um protocolo completo para garantir que seus atletas atinjam o pico de performance na semana da competição.
+                </p>
+            </div>
+
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Benefício 1 -->
+                <div class="card !p-6 flex items-start space-x-4 border-slate-700">
+                    <svg class="w-6 h-6 text-teal-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Análise Corporal (Bioimpedanciometria)</h3>
+                        <p class="text-slate-400">Diagnóstico preciso da composição corporal para definir a melhor estratégia de peso para cada biotipo.</p>
+                    </div>
+                </div>
+                <!-- Benefício 2 -->
+                <div class="card !p-6 flex items-start space-x-4 border-slate-700">
+                    <svg class="w-6 h-6 text-teal-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Dieta Personalizada (Pré-comp)</h3>
+                        <p class="text-slate-400">Plano alimentar focado em manter a massa magra e otimizar as reservas de energia durante o camp.</p>
+                    </div>
+                </div>
+                <!-- Benefício 3 -->
+                <div class="card !p-6 flex items-start space-x-4 border-slate-700">
+                    <svg class="w-6 h-6 text-teal-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Estratégia de Corte de Peso</h3>
+                        <p class="text-slate-400">Protocolo seguro e eficaz para a "semana da luta", garantindo que o atleta bata o peso sem sofrimento desnecessário.</p>
+                    </div>
+                </div>
+                <!-- Benefício 4 (Adicional Copy) -->
+                <div class="card !p-6 flex items-start space-x-4 border-slate-700">
+                    <svg class="w-6 h-6 text-teal-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Plano de Reidratação Pós-Pesagem</h3>
+                        <p class="text-slate-400">O passo mais importante: protocolo detalhado de hidratação e reposição de nutrientes para subir 100% recuperado.</p>
+                    </div>
+                </div>
+                 <!-- Benefício 5 (Adicional Copy) -->
+                <div class="card !p-6 flex items-start space-x-4 border-slate-700">
+                    <svg class="w-6 h-6 text-teal-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Suplementação Estratégica</h3>
+                        <p class="text-slate-400">Guia de suplementos para performance, recuperação e otimização do corte de peso.</p>
+                    </div>
+                </div>
+                 <!-- Benefício 6 (Adicional Copy) -->
+                <div class="card !p-6 flex items-start space-x-4 border-slate-700">
+                    <svg class="w-6 h-6 text-teal-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                    <div>
+                        <h3 class="text-xl font-semibold text-slate-50 mb-2">Suporte Direto (Pré-Luta)</h3>
+                        <p class="text-slate-400">Acesso direto ao nutricionista na semana da luta para ajustes finos e dúvidas de última hora.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Prova Social (Atletas) -->
+    <section class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-slate-50 mb-12">
+                Atletas que Confiam no Método
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Atleta 1 -->
+                <div class="card border-slate-700 !p-0 overflow-hidden">
+                    <img src="lutador_1.png" 
+                         alt="Atleta Campeão 1 - Lucas Ferrão" 
+                         class="w-full h-80 object-cover"
+                         onerror="this.src='https://placehold.co/400x400/333/FFF?text=atleta_1.png';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-slate-50 mb-2">Lucas Ferrão</h3>
+                        <p class="text-slate-400">"Com a sua orientação, o corte de peso ficou muito mais tranquilo, mesmo com a mudança de categoria. A dieta flexível facilita o dia a dia, e suas respostas rápidas tiraram todas as minhas dúvidas. Agradeço pelo profissionalismo e pelo suporte constante!"</p>
+                    </div>
+                </div>
+                <!-- Atleta 2 -->
+                <div class="card border-slate-700 !p-0 overflow-hidden">
+                    <img src="lutador_2.png" 
+                         alt="Atleta Campeão 2 - Danilo" 
+                         class="w-full h-80 object-cover"
+                         onerror="this.src='httpsa://placehold.co/400x400/333/FFF?text=atleta_2.png';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-slate-50 mb-2">Danilo</h3>
+                        <p class="text-slate-400">"Com o Caio, aprendi a comer certo durante o camp. Cheguei na semana da luta sem sofrer com o peso."</p>
+                    </div>
+                </div>
+                <!-- Atleta 3 -->
+                <div class="card border-slate-700 !p-0 overflow-hidden">
+                    <img src="lutador_3.jpeg" 
+                         alt="Atleta Campeão 3 - Saraiva" 
+                         class="w-full h-80 object-cover"
+                         onerror="this.src='httpsa://placehold.co/400x400/333/FFF?text=atleta_3.png';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-slate-50 mb-2">Saraiva</h3>
+                        <p class="text-slate-400">"A estratégia do Caio é genial. Corte de peso científico, sem achismo. Recomendo demais."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de Preços (Investimento) -->
+    <section class="py-20 bg-slate-800/50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-extrabold text-center text-slate-50 mb-12">
+                Investimento por Atleta (Pré-Torneio)
+            </h2>
+            <div class="flex flex-col md:flex-row justify-center gap-8 max-w-4xl mx-auto">
+                
+                <!-- Plano 1 -->
+                <div class="card text-center border-slate-700 hover:transform-none">
+                    <h3 class="text-2xl font-semibold text-slate-50 mb-2">PLANO EQUIPE</h3>
+                    <p class="text-slate-400 mb-6">Até 4 atletas</p>
+                    <div class="text-5xl font-extrabold text-slate-50 mb-6">
+                        R$ 70<span class="text-2xl font-semibold text-slate-400"> /por atleta</span>
+                    </div>
+                    <ul class="text-slate-400 space-y-2 mb-8 text-left">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Todo o pacote Pré-Torneio</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Bioimpedanciometria</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Estratégia de Corte de Peso</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano de Reidratação</li>
+                    </ul>
+                </div>
+
+                <!-- Plano 2 (Destaque) -->
+                <div class="card text-center ring-2 ring-cyan-400 shadow-2xl shadow-cyan-500/10 hover:transform-none">
+                    <span class="bg-gradient-to-r from-teal-400 to-cyan-500 text-slate-900 font-bold text-xs uppercase px-3 py-1 rounded-full mb-4 inline-block">Melhor Valor</span>
+                    <h3 class="text-2xl font-semibold text-slate-50 mb-2">PLANO ACADEMIA</h3>
+                    <p class="text-slate-300 mb-6">Acima de 4 atletas</p>
+                    <div class="text-5xl font-extrabold text-slate-50 mb-6">
+                        R$ 50<span class="text-2xl font-semibold text-slate-300"> /por atleta</span>
+                    </div>
+                    <ul class="text-slate-300 space-y-2 mb-8 text-left">
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Todo o pacote Pré-Torneio</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Bioimpedanciometria</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Estratégia de Corte de Peso</li>
+                        <li class="flex items-center"><svg class="w-5 h-5 text-teal-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Plano de Reidratação</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Bônus (Voucher) -->
+    <section id="bonus" class="py-20 bg-slate-900">
+        <div class="container mx-auto px-6">
+            <div class="card border-slate-700 p-10 md:p-12 text-center flex flex-col items-center shadow-xl">
+                <span class="brand-gradient-text font-semibold uppercase">Bônus da Parceria</span>
+                <h2 class="text-3xl md:text-4xl font-extrabold text-slate-50 mt-4 mb-6 max-w-2xl">
+                    Benefício Exclusivo para TODOS os Alunos da Academia
+                </h2>
+                <p class="text-slate-400 text-lg mb-8 max-w-xl">
+                    Ao fechar a parceria para seus atletas de competição, todos os alunos da sua academia (mesmo os não-atletas) ganham um voucher para o...
+                </p>
+                <div class="bg-slate-900 border-2 border-teal-400 border-dashed rounded-lg p-8 inline-block">
+                    <h3 class="text-2xl font-bold text-slate-50 mb-2">Acompanhamento Nutricional Mensal</h3>
+                    <p class="text-4xl font-extrabold brand-gradient-text">
+                        R$ 99,00 <span class="text-xl text-slate-400">/mês</span>
+                    </p>
+                    <p class="text-slate-500 text-sm mt-2">(Valor exclusivo para alunos da academia parceira)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Final e Footer -->
+    <footer id="contato" class="py-20 bg-slate-900 border-t border-slate-800">
+        <div class="container mx-auto px-6 text-center">
+            
+            <h2 class="text-3xl md:text-4xl font-extrabold text-slate-50 mb-6">
+                Vamos Formar Campeões Juntos?
+            </h2>
+            <p class="text-slate-400 text-lg mb-8 max-w-xl mx-auto">
+                Entre em contato para agendar uma visita e levar a nutrição de alta performance para sua equipe.
+            </p>
+            <a href="https://wa.me/5521969489421?text=Olá,+Caio!+Gostaria+de+saber+mais+sobre+a+parceria+para+atletas+de+combate+na+minha+academia." 
+    target="_blank" 
+    class="btn-primary inline-flex items-center space-x-2">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.75 13.96c.25.13.41.2.52.34.11.14.15.32.15.54 0 .22-.04.4-.12.58-.08.18-.24.42-.48.72-.24.3-.56.66-.96 1.08-.4.42-.88.88-1.44 1.38-.56.5-1.12.98-1.68 1.44-.12.09-.25.18-.39.27-.14.09-.28.17-.42.24-.14.07-.28.13-.42.18-.14.05-.28.09-.42.12-.14.03-.28.05-.42.06-.14.01-.28.01-.42.01-.14 0-.28,0-.42-.01-.14-.01-.28-.02-.42-.03-.14-.01-.28-.03-.42-.05-.14-.02-.28-.05-.42-.08-.14-.03-.28-.07-.42-.11-.14-.04-.28-.09-.42-.14-.14-.05-.28-.11-.42-.17-.14-.06-.28-.13-.42-.2-.14-.07-.28-.15-.42-.23-.14-.08-.28-.17-.42-.26-.14-.09-.28-.19-.42-.29-.14-.1-.28-.21-.42-.32-.14-.11-.28-.23-.42-.35-.14-.12-.28-.25-.42-.38-.14-.13-.28-.27-.42-.41-.14-.14-.28-.29-.42-.44-.14-.15-.28-.31-.42-.47-.14-.16-.28-.33-.42-.5-.14-.17-.28-.35-.42-.53-.14-.18-.28-.37-.42-.56-.14-.19-.28-.39-.42-.59-.14-.2-.28-.41-.42-.62-.14-.21-.28-.43-.42-.65-.14-.22-.28-.45-.42-.68-.14-.23-.28-.47-.42-.71-.14-.24-.28-.49-.42-.74-.14-.25-.28-.51-.42-.77-.14-.26-.28-.53-.42-.8-.14-.27-.28-.55-.42-.83-.14-.28-.28-.57-.42-.86-.14-.29-.28-.59-.42-.89-.14-.3-.28-.61-.42-.92-.14-.31-.28-.6Multi-Color 3D Printing is an art o"></path></svg>
+    Entre em contato</a>
